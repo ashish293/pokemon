@@ -1,0 +1,29 @@
+.card {
+	height: 300px;
+	width: 300px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 4px grey, 0px 0px 4px grey;
+	margin: 10px;
+	background: white;
+	text-align: center;
+	cursor: pointer;
+}
+.card:hover {
+	background-color: #f3f384;
+}
+.card-img {
+	width: 60%;
+	margin: 15px 0;
+}
+.card > .brief {
+	padding: 4px 20px;
+	text-align: center;
+}
+.card > .brief > .name {
+	font-weight: normal;
+	font-size: 1.8rem;
+	text-shadow: 1px 1px #f0dfbc;
+	font-family: "Roboto Mono", monospace;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}

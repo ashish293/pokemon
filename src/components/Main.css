@@ -1,0 +1,13 @@
+.main {
+	padding: 30px 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.clipLoad {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.capitalize {
+	text-transform: capitalize;
+}

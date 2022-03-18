@@ -1,0 +1,9 @@
+.header {
+	background: black;
+}
+.header > .title {
+	color: white;
+	font-size: 2rem;
+	padding: 6px 20px;
+	font-family: "Open Sans", sans-serif;
+}
