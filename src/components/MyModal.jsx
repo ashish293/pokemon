@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Modal from 'react-modal';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './MyModal.css'
-import Cspan from './Cspan'
 
 const baseImage = "https://cdn.traction.one/pokedex/pokemon/"
 const customStyles = {
