@@ -1,12 +1,16 @@
 import React from "react";
-import Header from "./components/Header";
 import Main from "./components/Main";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Search from "./components/Search";
 const App = () => {
 	return (
 		<>
-			<Header />
-			<Main />
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Main />} />
+					<Route path="/search" element={<Search />} />
+				</Routes>
+			</BrowserRouter>
 		</>
 	);
 };

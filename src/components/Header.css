@@ -1,9 +1,20 @@
 .header {
 	background: black;
+	display: flex;
+	align-items: center;
 }
 .header > .title {
 	color: white;
 	font-size: 2rem;
 	padding: 6px 20px;
 	font-family: "Open Sans", sans-serif;
+}
+.nav{
+	flex:1;
+	text-align: center;
+}
+.nav-link{
+	margin-right: 10px;
+	text-decoration: none;
+	font-size: 1.2rem;
 }

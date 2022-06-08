@@ -1,4 +1,4 @@
-.main {
+.infinite-scroll-component {
 	padding: 30px 40px;
 	display: flex;
 	flex-wrap: wrap;
@@ -10,4 +10,8 @@
 }
 .capitalize {
 	text-transform: capitalize;
+}
+.moreLoader {
+	width: 100%;
+	text-align: center;
 }
