@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './MyModal.css'
 
-const baseImage = "https://cdn.traction.one/pokedex/pokemon/"
+const baseImage = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/"
 const customStyles = {
   content: {
     top: '50%',
@@ -61,7 +61,7 @@ const MyModal = (props) => {
           <LazyLoadImage
             alt="pokemon"
             className="modal-img"
-            src={baseImage + modalKey + ".png"} // use normal <img> attributes as props
+            src={baseImage + String(modalKey).padStart(3, '0') + ".png"} // use normal <img> attributes as props
           />
         </div>
         <div className="right" style={{ backgroundColor: rightBg }}>

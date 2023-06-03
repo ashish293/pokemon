@@ -3,7 +3,7 @@ import './Card.css'
 import MyModal from './MyModal'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-const baseImage = "https://cdn.traction.one/pokedex/pokemon/"
+const baseImage = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/"
 
 const Card = ({ data, index }) => {
   const [modalOpen, setModalOpen] = useState(false)
@@ -15,7 +15,7 @@ const Card = ({ data, index }) => {
         <LazyLoadImage
           alt="pokemon"
           className="card-img"
-          src={baseImage + (index + 1) + ".png"} // use normal <img> attributes as props
+          src={baseImage + String(index + 1).padStart(3, '0') + ".png"} // use normal <img> attributes as props
         />
         {/* <img className="card-img" src={baseImage + (index + 1) + ".png"} /> */}
         <div className="brief">
